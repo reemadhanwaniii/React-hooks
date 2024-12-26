@@ -1,26 +1,30 @@
 
-import { useEffect, useLayoutEffect } from 'react'
+//import { useEffect, useLayoutEffect } from 'react'
 import './App.css'
+import HugeList from './HugeList';
 
 function App() {
   
-  useEffect(()=>{
-    //prompt('useEffect')
-    console.log("hello");
-    setTimeout(()=>{
-       document.title = "use effect"
-    },5000);
+  // useEffect(()=>{
+  //   //prompt('useEffect')
+  //   console.log("hello");
+  //   setTimeout(()=>{
+  //      document.title = "use effect"
+  //   },5000);
    
-  },[]);
+  // },[]);
 
-  useLayoutEffect(()=>{
-    console.log("hello from layout effect");
-    document.title = "use layout effect ............."
-  },[]);
+  // useLayoutEffect(()=>{
+  //   console.log("hello from layout effect");
+  //   document.title = "use layout effect ............."
+  // },[]);
 
   return (
    <>
     App
+    <div>
+      <HugeList/>
+    </div>
    </>
   )
 }
